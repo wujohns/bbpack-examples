@@ -1,2 +1,1 @@
-# bbpack-examples
-Examples for bbpack usage
+# BBPack Examples
