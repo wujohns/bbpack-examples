@@ -14,6 +14,4 @@ bbpack.pagesPack({
          */
         { path: './dist/bundle.js', parts: ['./src/*.js'] }
     ]
-}, () => {
-    console.log('Build Success');
 });
