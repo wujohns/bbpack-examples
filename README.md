@@ -50,6 +50,8 @@ You also can build multi target file in once by add object like above
 
 ## Demo2: Use Libs Pack Feature
 
+[source](https://github.com/wujohns/bbpack-examples/tree/master/demo2)
+
 In many pages, we use the same node_modules or common js-file (here we call it `lib`). If using the demo1's directly pack, the different target file will pack the lib repeatly. Using `libsPack` method can resolve this problem. the `libsPack` will pack the libs into a file(ex: libs.js) and what you need do for pages is just set the externals in `pagesPack` method.
 
 like that:
@@ -73,6 +75,8 @@ bbpack.pagesPack({
 
 ## Demo3: Sourcemap, Uglify And Watch Files' Change
 
+[source](https://github.com/wujohns/bbpack-examples/tree/master/demo3)
+
 If you want to use some convenient feature for develope of product(like sourcemap, uglify, auto build), just set it when init the `bbpack` object:
 ```
 const BBPack = require('bbpack');
@@ -87,6 +91,8 @@ const bbpack = new BBPack({
 Then using `libsPack` or `pagesPack` for your project
 
 ## Demo4: Custom Browserify's transforms or plugins
+
+[source](https://github.com/wujohns/bbpack-examples/tree/master/demo4)
 
 Default `bbpack` use the [babelify](https://github.com/babel/babelify) and [less-modulesify](https://github.com/wujohns/less-modulesify) for browserify's transfroming. If you want to custom it or using other browserify's transforms or plugins, you need to set the `transfroms` params when init the bbpack object:
 ```
@@ -115,6 +121,8 @@ const bbpack = new BBPack({
 For more detail you can see [babelify](https://github.com/babel/babelify), [less-modulesify](https://github.com/wujohns/less-modulesify) and [browserify transforms List](https://github.com/substack/node-browserify/wiki/list-of-transforms)
 
 ## Demo5: Use With Browsersync (custome afterPipes)
+
+[source](https://github.com/wujohns/bbpack-examples/tree/master/demo5)
 
 This is a example of using the `bbpack`'s afterPipes feature. And It's very useful for development.
 Using BrowserSync need a web server. So I write a script for it(server.js).
